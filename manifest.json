@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "KeyMaster",
+  "version": "1.0.0",
+  "description": "Vimium-style keyboard navigation for clickable elements",
+  "permissions": [],
+  "commands": {
+    "activate-hints": {
+      "suggested_key": {
+        "default": "Alt+Shift+M"
+      },
+      "description": "Activate hint mode"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {}
+}

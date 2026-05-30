@@ -1,0 +1,30 @@
+.km-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  pointer-events: none;
+}
+
+.km-hint {
+  position: absolute;
+  background: #1a1a1a;
+  color: #fff;
+  font: bold 11px/1 "SF Mono", "Menlo", "Consolas", monospace;
+  padding: 2px 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.km-hint--dim {
+  opacity: 0.3;
+}
+
+.km-hint--matched {
+  color: #6ee7b7;
+}
